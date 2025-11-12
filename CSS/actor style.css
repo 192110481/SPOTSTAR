@@ -1,0 +1,107 @@
+/* Smooth fade-in for page load */
+body {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Actor Page Layout */
+body.actor-page {
+  background: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Actor Name */
+h1 {
+  color: #007BFF;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+/* Actor Image */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007BFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Description */
+.description {
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+/* Songs Section */
+.songs {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.songs h3 {
+  color: #007BFF;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+}
+
+/* Back Button */
+.back-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .songs {
+    width: 95%;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+}

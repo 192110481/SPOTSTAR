@@ -1,0 +1,92 @@
+/* Smooth fade-in for page load */
+body {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Genre Page Layout */
+body.genre-page {
+  background: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Page Title */
+h1 {
+  color: #007BFF;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Genre Headings */
+h3 {
+  color: #007BFF;
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Video Styling */
+iframe {
+  width: 80%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Back Button */
+.back-btn {
+  display: block;
+  margin: 40px auto;
+  padding: 10px 25px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  iframe {
+    width: 95%;
+    height: 250px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .back-btn {
+    width: 70%;
+  }
+}
