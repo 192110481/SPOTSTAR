@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="stylesheet" href="../CSS/moviesstyle.css">
+</head>
+<body class="movies-page">
+  <h1>🎬 Movies</h1>
+  <p>Select a language to view movies:</p>
+
+  <select id="language" onchange="goToPage()">
+    <option value="">-- Choose Language --</option>
+    <option value="./TELUGU.html">Telugu</option>
+    <option value="./Tamil.html">Tamil</option>
+    <option value="./Malayalam.html">Malayalam</option>
+  </select>
+
+  <button onclick="history.back()" class="back-btn">⬅ Back</button>
+
+  <script>
+    function goToPage() {
+      let lang = document.getElementById("language").value;
+      if (lang) {
+        window.location.href = lang;
+      }
+    }
+  </script>
+  <script src="../JS/script.js"></script>
+
+</body>
+</html>
